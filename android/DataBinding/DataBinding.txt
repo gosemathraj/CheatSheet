@@ -1,0 +1,37 @@
+Data Binding : 
+Binding UI Components in the layout with the data using declaration in the layout itself rather than Programatically
+
+Binding data from ViewModel Programatically and Via Layout
+
+Why DataBinding and How it Works 
+DataBinding Compiler generates Binding Classes at compile time
+
+Programatically
+findViewbyId<TextView>(R.id.textview).apply{
+	text = viewModel.userName
+}
+
+With DataBinding
+<TextView
+	android:text="@{viewModel.userName}"/>
+	
+To enable DataBinding. Add DataBinding element (In build.gradle)
+android{
+	dataBinding.enabled = true;
+}
+
+Binding Process in the layout
+<layout>
+	<data>
+		<variable name="any variable name(e.g user)" type="Pojo Class Path (e.g User class)"></variable>
+	</data>
+	
+	<Your layout>
+	<!--Example-->
+	<TextView 
+		id="@+id/userName"
+		text="@{any variable name.userName}(e.g @{user.firstName})"
+</layout> 
+
+
+

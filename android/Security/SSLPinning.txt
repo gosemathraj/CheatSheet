@@ -1,0 +1,7 @@
+SSL Certificate:
+Small data files that proves a server to be secure 
+for the purpose of connection. 
+
+Extended Validation -->
+One of the Standard Provider -- GlobalSign
+Address Bar turns from white to Green that means it uses Extended Validation

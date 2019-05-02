@@ -1,0 +1,9 @@
+To check the Git Configuration
+Git configuration includes Git Author (user.name and user.email)the one who is committing
+In the git Log we can see the The Author of the commit
+Two types : Local and Global
+Global --> Global configuration (Not related to Single Repo) ~/.gitconfig can be found here
+Local --> Local Configuration (Specific to Particular Repo) Contains some global as well as local info like Remote Url of the project
+
+--> git config -l or git config --list
+

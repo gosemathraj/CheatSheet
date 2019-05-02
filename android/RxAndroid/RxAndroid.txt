@@ -1,0 +1,77 @@
+Reactive Programming
+Event based asynchronous programming.Everything is a asynchronous data stream which can be observed
+Data Stream can be created out of any event like variable changes,click events, http calls, errors etc.
+Every code runs on its own thread.
+
+Rx (Reactive Extensions or ReactiveX) --> Library that follows Reactive principles
+RxJava (Reactive Extension library from "Netflix")
+RxAndroid (Rx library specific to Android Platform )
+
+Schedulers : Schedulers are responsible for performing operations of observable on different threads.
+Schedulers decide on which thread operation is going to be performed (Main thread or Background Thread)
+
+Types of Schedulers :
+
+IO - 
+For IO related stuff like networks requests, file System operations.IO Scheduler is backed by "Thread Pool"
+"Thread Pool" --> Group of worker threads waiting for job and can be reused many times.
+IO scheduler starts with one thread which can be reused if not it spawns other thread.
+Imp -->> Unused Threads are automatically killed after 60 seconds of inactivity.
+
+Computation -
+Similar to IO Scheduler but the number of threads it can spawn is limited.
+Uses Thread Pool.
+Number of threads that can be used == Number of cores present in the system.Good for small calculations and for quick operations.
+
+NewThread -
+Creates New Thread for every Observables.It does not uses Thread Pool.
+
+Single -
+Single scheduler contains only Single Thread.All the observables are run on the same thread.
+No spawning of other threads.
+For sequential operations.
+
+Immediate -
+This scheduler starts the task on the Main Thread.It blocks the thread (It is deprecated and removed)
+
+Trampoline -
+This scheduler runs the code on the current thread that can also be the Main Thread.
+So if a code is running on Main Thread then Trampoline scheduler adds the task to the queue of the Main Thread.
+It blocks the Main Thread.
+It is similar to Immediate Scheduler except Immediate scheduler adds the task immediately but Trampoline waits for the current task to complete
+
+Executor Scheduler -
+It is Custom IO Scheduler (We can customize its configuration)
+We can create a custom pool of threads where we can specify its size.
+
+Android Scheduler -
+It is specific to android (Part of RxAndroid)
+It is used to bring back the execution to Main Thread so that UI changes can be made.
+Used with ObserveOn(AndroidSchedulers.mainThread()) 
+
+OPERATORS :- Operates on Observables and returns Observables
+
+Operators that create New Observables (10)
+Create --> 
+Defer -->
+Empty Never Throw --> 
+From -->
+Interval 
+Just
+Range
+Repeat
+Start
+Timer
+
+SubscribeOn() --> Specifies a scheduler which decides where the task is going to be executed .Which thread to emit items on
+ObserveOn()	  --> Scheduler decides where task is to done. So the result are also passed to same thread.To get results on other thread Use ObserveOn
+
+
+Operators that Transforms Observables (6)
+Buffer --> Groups items emitted by observables into bundles and then emits them.Instead of emitting single item it emits bundles
+FlatMap --> Transforms items emitted by an observable into observables and then flattens the emissions from those into Single Observable
+GroubBy --> Divides observable into observables that contains items grouped by a function and then the individual observables emits items having same key 
+Map --> 
+Scan
+Window
+

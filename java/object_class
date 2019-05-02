@@ -1,0 +1,17 @@
+God Class
+
+Imp Methods
+clone()
+equals()
+toString()
+getClass()
+hashcode()
+
+notify()
+notifyAll()
+wait()
+
+finalize()
+
+
+

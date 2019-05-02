@@ -1,0 +1,2 @@
+SSL Pinning -->
+https://infinum.co/the-capsized-eight/securing-mobile-banking-on-android-with-ssl-certificate-pinning

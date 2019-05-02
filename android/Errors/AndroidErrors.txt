@@ -1,0 +1,2 @@
+Butter Knife Library while using androidx package
+Use java8 source compatibility options in gradle

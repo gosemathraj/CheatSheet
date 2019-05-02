@@ -1,0 +1,48 @@
+By default the class in  kotlin is final and hence cannot be extended
+To extend a class make it "open" (open keyword).With open keyword class can be extended.
+
+lateint in kotlin
+lateint vs by lazy (Both offers Lazy initialization)
+
+Companion Object --> Static object i.e Single object shared between classes
+
+Starting Intent
+startActivity(this@CurrentActivity,DestinationActivity::class.java)
+
+Safe Calls (?.) and Null Checks (!!) in Kotlin
+Nullable in Kotlin
+By default vars in kotlin cannot hold null values (It gives compileError)
+Declare Nullable Property --> Add "?" after the dataType of the property	
+When the property is Nullable --> Null Check is required
+for Normal var x --> x.someMethod() --> Its ok. Compiler is sure x would not be null as by default vars cannot hold null values
+for Nullable var x --> x.someMethod() --> Compiler throws error as it is not sure about x being null. So Null Checks are Mandatory 
+InShort --> Null Checks are Mandatory for Nullable types (?)
+
+Null Checking --> Use Safe call (?.) and Null Check (!!)
+Methods for Null Checking
+1. Explicit Null Check 
+	if(x != null){}else{} --> This is OK for Immutable Property.Its value cannot be altered.
+								But for Muttable Property. Its value can be changed and hence the compiler can throw error 
+								
+Safe Calls (?.) -->  	Consider somevariable?.methodCall() --> This will call the method if the someVariable is not null.
+																Or else returns null without Null Pointer Exception(NPE)
+
+Safe Call (?.) with let --> (?.let) --> 
+
+Elvis Operator (?:) --> Safe Call operator returns null if it finds any null value.But to return non null values Elvis Operator is used
+val result = nullableVariable?.someMethodCall() --> If it returns null the below expression is called
+             ?: fallbackIfNullMethodCall()		--> It is called if the above expression is null 
+			 
+!! operator (The Null Operator)
+someVariable!!.someMethod() --> It Tells the compiler that someVariable is not null.If it is null throw Null Pointer Exception(NPE)
+
+Access Modifiers in Kotlin
+public --> Can be accessed anywhere(Default in Kotlin)(Java has a default access specifier - Which is package private.Anyone in package can access it)
+protected --> Can be accessed only in Subclasses (Same in Java and Kotlin)
+private --> Cannot be accessed outside the class (Same in Java and Kotlin)
+internal --> Can be accessed only in Modules(Classes that are compiled together) (Not in Java)
+
+
+Constructors in kotlin 
+
+
