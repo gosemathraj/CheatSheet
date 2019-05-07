@@ -1,0 +1,21 @@
+JobSchedulers
+
+- For Scheduling jobs which are executed in the applications own process.
+- It operates at system level as a system service --> Context.getSystemService(Context.JOB_SCHEDULER_SERVICE).
+- Introduced in Lollipop.
+- Not time based but Event and Conditions based.If you need a job to run at particular time then it may not run at the same time, for that purpose AlarmManager is used.
+- It is mostly used for deferrable tasks
+- Jobs are guaranteed to run
+
+Process
+- Process 
+
+Implementation : 
+JobService 	--> That does the actual job
+Componentname	--> To get instance of JobService
+JobInfo		--> Job info (Customization of job)
+JobScheduler	--> Schedules the job
+
+
+
+
