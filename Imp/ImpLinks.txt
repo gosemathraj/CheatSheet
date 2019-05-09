@@ -1,2 +1,13 @@
 SSL Pinning -->
 https://infinum.co/the-capsized-eight/securing-mobile-banking-on-android-with-ssl-certificate-pinning
+
+Smack Xmpp Client
+https://www.igniterealtime.org/projects/index.jsp
+
+
+Best On WorkManager
+https://medium.com/google-developer-experts/services-the-life-with-without-and-worker-6933111d62a6
+
+Imp
+https://android.jlelse.eu/how-to-use-constraintlayout-736a78e2971c
+https://medium.com/@loutry/guide-to-constraintlayout-407cd87bc013

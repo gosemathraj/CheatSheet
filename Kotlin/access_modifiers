@@ -1,0 +1,19 @@
+4 Access Modifiers (provides ENCAPSULATION) : private ,Protected, Internal, Public
+Default : Public
+
+private		: Visible inside the same class or File
+Protected	: Visible in same and child class (anywhere) -- It is not allowed for top level declarations
+Internal	: Visible in same Module
+Public		: Visible everywhere (Default)
+
+Internal Modifier : 
+Internal Modifier is visible in same module.
+Module is a set of files compiled together.
+We can have multiple gradle modules inside same application.To restrict access to different modules internal is used.
+
+NOTE : 
+1. Local classes,functions and variables CANNOT have visibility Modifiers.
+2. Can change the visibility of the Constructor.
+3. 
+
+

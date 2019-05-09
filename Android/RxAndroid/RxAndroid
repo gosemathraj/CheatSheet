@@ -8,7 +8,7 @@ RxJava (Reactive Extension library from "Netflix")
 RxAndroid (Rx library specific to Android Platform )
 
 Schedulers : Schedulers are responsible for performing operations of observable on different threads.
-Schedulers decide on which thread operation is going to be performed (Main thread or Background Thread)
+Schedulers decide on which thread, operation is going to be performed (Main thread or Background Thread)
 
 Types of Schedulers :
 

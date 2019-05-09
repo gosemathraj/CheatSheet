@@ -1,0 +1,30 @@
+Category Types : 
+
+1. Creating
+2. Transforming
+3. Filtering
+4. Combining
+5. Error Handling
+6. Observable Utility
+7. Conditional and Boolean
+8. Mathematical and Aggregate
+9. Backpressure
+10. Connectable
+11. TO Convert
+
+
+Creating : 
+
+Create
+Defer
+empty / never /throw
+from
+interval
+just
+range
+repeat 
+start
+timer
+
+
+
