@@ -11,3 +11,5 @@ https://medium.com/google-developer-experts/services-the-life-with-without-and-w
 Imp
 https://android.jlelse.eu/how-to-use-constraintlayout-736a78e2971c
 https://medium.com/@loutry/guide-to-constraintlayout-407cd87bc013
+
+https://medium.com/@laaptu9/part-2-simple-ways-to-stab-with-dagger-2-module-component-and-field-injection-e85cbef8678b

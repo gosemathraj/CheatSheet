@@ -1,0 +1,9 @@
+Ways TO Create Objects in Java
+
+new
+clone
+newInstance --> Reflection Class.forName()
+Deserialization
+new Instance of Constructor loadClass()
+
+

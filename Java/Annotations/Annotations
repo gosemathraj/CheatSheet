@@ -1,0 +1,7 @@
+Annotations : 
+Annotations are metadata(Additional info regarding the source code or which is needed for compiler)
+Annotations are processed by Annotation Processors
+Annotation Processors replace the Annotation with some sort of code or with files
+Annotations are processed at runtime by Reflection --> getAnnotations(); && at compile time by annotation processors
+ 
+

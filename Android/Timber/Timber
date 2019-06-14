@@ -1,0 +1,26 @@
+Timber --> A Logging Library built on the top of Android Log Class(android.util.log)
+
+Android Log (6 types)
+log.d --> Debug
+log.e --> Error
+log.w --> Warning
+log.v --> Verbose
+log.i --> Info
+log.wtf --> What a terrible Failure (An unexpected failure or Exception)
+log.println() --> Low level logging call (not used)
+
+Logging in Debug and Release Mode
+Logging can be done in debug and Release Mode.Usually it is done in Debug mode.
+When an application is to be deployed all the log statements needs to be removed.Otherwise when apk is run and the device is attached to debugger it prints all the Logs.So it may reveal Important data.
+So for data safety Logs needs to be removed in Prod Mode
+
+Ways to Tackle removing Logs manually from Release Mode : 
+1. Boolean Variable 
+isDebugMode = false or true;
+while Logging ,log only when debug mode is on
+
+2. BuildConfig.DEBUG
+
+
+
+
